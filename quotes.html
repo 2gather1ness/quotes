@@ -1,0 +1,998 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .quote-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .quote-text {
+            font-size: 1.5em;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .quote-author {
+            font-size: 1.2em;
+            text-align: right;
+            color: #555;
+        }
+        .copy-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 1em;
+            color: white;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        .copy-button:hover {
+            background: #0056b3;
+        }
+        .copy-message {
+            display: none;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        .copy-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quotes Collection</h1>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Ethics is a dream."</div>
+        <div class="quote-author">- Charles Baxter, The Feast of Love</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Anyone who is capable of getting themselves made President should on no account be allowed to do the job."</div>
+        <div class="quote-author">- Douglas Adams, The Hitchhiker's Guide to the Galaxy</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">" Our entire life worth's less than one moment of the absolute's truth vanity. "</div>
+        <div class="quote-author">- Sorin Cerin</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Looking up at the stars only proves you admire them, but shining your light proves you are like them."</div>
+        <div class="quote-author">- Matshona Dhliwayo</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Maybe I am everything I knew that I would never be. I looked back at Jay and smiled."</div>
+        <div class="quote-author">- Holly Hood</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"We tend to get a little information before we off people. It’s not a play by ear sort of deal."</div>
+        <div class="quote-author">- Holly Hood, Prison of Paradise</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I too am not a bit tamed, I too am untranslatable, I sound my barbaric yawp over the roofs of the world."</div>
+        <div class="quote-author">- Walt Whitman, Leaves of Grass</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Two girls discover the secret of lifein a sudden line of poetry."</div>
+        <div class="quote-author">- Denise Levertov, Poems, 1960-1967</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"If you can see the invisible, God will do the impossible."</div>
+        <div class="quote-author">- Joel Osteen</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"May the grace of faith, keep you going in the forward motion to reach the ultimate goal."</div>
+        <div class="quote-author">- Lailah Gifty Akita</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"With the wings of knowledge, it is easier to fly toward the blue sky of wisdom."</div>
+        <div class="quote-author">- Debasish Mridha</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"What you perceive as a failure today may actually be a crucial step towards the success you seek. Never give up."</div>
+        <div class="quote-author">- Richelle E. Goodrich, Smile Anyway</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"When mother-cow is chewing grass its young ones watch its mouth"</div>
+        <div class="quote-author">- Chinua Achebe, Things Fall Apart</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"The greatest strength is the spirit of endurance."</div>
+        <div class="quote-author">- Lailah Gifty Akita, Think Great: Be Great!</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Time is a power of its own, and it may be the only power by which some miracles come to pass."</div>
+        <div class="quote-author">- Richelle E. Goodrich, Slaying Dragons</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"What if I was the sexual equivalent of popcorn? Suitable for light snacking only?"</div>
+        <div class="quote-author">- Rachel Vincent, My Soul to Save</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"If the self-help books worked, it would be a shrinking industry not a growing one."</div>
+        <div class="quote-author">- Steve Maraboli, Life, the Truth, and Being Free</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"all i want it's a pièce of your heart not all of it"</div>
+        <div class="quote-author">- Marty</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Be like the sun; bear with those in the dark, but keep shining your light."</div>
+        <div class="quote-author">- Matshona Dhliwayo</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"A smile is on everyone's lips."</div>
+        <div class="quote-author">- Anthony T. Hincks</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"...within invisible walls of dreams, we live a life that might have been..."</div>
+        <div class="quote-author">- John J. Geddes</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Oh Mokona, you're such a tease! ~Fai D. Flowright"</div>
+        <div class="quote-author">- CLAMP</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"The only way to make sure people you agree with can speak is to support the rights of people you don't agree with. "</div>
+        <div class="quote-author">- Eleanor Holmes Norton</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"She had something more than material value ~ she had a soul, no money could buy."</div>
+        <div class="quote-author">- Nikki Rowe</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Art is not about itself but the attention we bring to it."</div>
+        <div class="quote-author">- Marcel Duchamp</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Open all windows and let love come in."</div>
+        <div class="quote-author">- Debasish Mridha</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Rest and be thankful."</div>
+        <div class="quote-author">- William Wordsworth</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Ask the Creator to direct your path."</div>
+        <div class="quote-author">- Lailah Gifty Akita, Think Great: Be Great!</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Feelings are real. They often become one’s reality. But they are not always based on truth."</div>
+        <div class="quote-author">- Jesikah Sundin, Elements</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Her mouth was soft and moist, and she came to me like a dachshund jumping into your lap."</div>
+        <div class="quote-author">- Charles   Williams, The Hot Spot</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Of all the variables in your life, your relationships may hold the greatest power to make you either happy or miserable"</div>
+        <div class="quote-author">- Shane Eric Mathias, The Happiness Tree: Grow Your Happiness by Cultivating a Healthy, Creative and Purposeful Life</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"When we have no choice of what is to come, we must find the strength to have trust in what lies ahead. SURRENDER."</div>
+        <div class="quote-author">- Karen A. Baquiran</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"No matter what you do, no matter how far away you run, what’s written in the stars cannot be undone."</div>
+        <div class="quote-author">- Tali Alexander, Lost in Rewind</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"My future starts when I wake up every morning. Every day I find something creative to do with my life."</div>
+        <div class="quote-author">- Miles Davis</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Without literature, life is hell."</div>
+        <div class="quote-author">- Charles Bukowski</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Was there a language of loss? Did everyone who suffered speak a different dialect?"</div>
+        <div class="quote-author">- Jodi Picoult, Handle with Care</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"The older you get, the more you realize you need a handful of good, close, tight friends."</div>
+        <div class="quote-author">- Nicole Richie</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"She looks so broken, I don't want to hurt her more."</div>
+        <div class="quote-author">- Dannielle Wicks, Fading Away</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"One of the reasons ordinary people are incapable of magic is simple dearth of conviction."</div>
+        <div class="quote-author">- Michael Cunningham, A Wild Swan: And Other Tales</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Your relationship or lack of relationship with God through Jesus Christ continues after your last breath on this earth."</div>
+        <div class="quote-author">- Alisa Hope Wagner</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Obsession and desperation for your goal, gets you the goal."</div>
+        <div class="quote-author">- Amit Kalantri</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I will, without hesitation, walk away from anything and anyone that threatens my peace or sense of self."</div>
+        <div class="quote-author">- Izey Victoria Odiase</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"There's no alternative to being yourself. Accept it, honour it, value it - and get on with it."</div>
+        <div class="quote-author">- Rasheed Ogunlaru</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"How terrible this darkness was, how bewildering, and yet mysteriously beautiful!"</div>
+        <div class="quote-author">- Stefan Zweig, The Burning Secret and other stories</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"When our challenge persists, returning in different forms, it may be a sign for us to accepted it as a valuable lesson."</div>
+        <div class="quote-author">- Raphael Zernoff</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"It was a huge comfort to have a person who'd keep you honest with yourself and who also gave you safe harbour."</div>
+        <div class="quote-author">- Lauren Dane, Taking Care of Business</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"But of course, the universe does not conspire to put you in one place rather than another."</div>
+        <div class="quote-author">- John Green, An Abundance of Katherines</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"There’s no way I can care properly for my children if I don’t first care for myself."</div>
+        <div class="quote-author">- Tez Brooks</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"While there may not be a book in every one of us, there is so often a damned good short story."</div>
+        <div class="quote-author">- Jeffrey Archer</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"My life will not be an apology. It will be a statement"</div>
+        <div class="quote-author">- Andy Andrews, The Traveler's Gift: Seven Decisions that Determine Personal Success</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Stay low, stay quiet, keep it simple, don't expect too much, enjoy what you have."</div>
+        <div class="quote-author">- Dean Koontz</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Heaven shows up all the time. But we plan our time so that we show up in other places."</div>
+        <div class="quote-author">- Craig D. Lounsbrough</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Be selective in your battles..."</div>
+        <div class="quote-author">- Brandi L. Bates, Remains To Be Seen</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"There's nothing more romantic than self-destruction."</div>
+        <div class="quote-author">- Meghan Blistinsky</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"How you react when your back is against the wall will determine if you see what's actually over the wall."</div>
+        <div class="quote-author">- Onyi Anyado</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Whatever doesn't destroy you, makes you stronger. Hardships have a way of toughening us, if they don't kill us."</div>
+        <div class="quote-author">- V.C. Andrews, Pearl in the Mist</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"It’s a lot cleaner when Command kills you on purpose . . . than when they do it by accident."</div>
+        <div class="quote-author">- Henry V. O'Neil, Glory Main</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Law is a jealous subject - It will require and consume all of you should you choose to pursue her."</div>
+        <div class="quote-author">- Elias Tan JS</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"We first crush people to the earth, and then claim the right of trampling on them forever, because they are prostrate."</div>
+        <div class="quote-author">- Lydia Maria Francis Child</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I saw the errors I had made and assumed full responsibility for everything."</div>
+        <div class="quote-author">- Henry Miller</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Isn't that funny, that deity is passe but the attributes and implications of deity linger--"</div>
+        <div class="quote-author">- Gregory Maguire</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I realize I am alone and there is no one with me.Is this I wonder, how my whole life will be?"</div>
+        <div class="quote-author">- Jordan Hoechlin</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"A leader did not slump. A leader was in control. Even when he least felt like he controlled anything. Especially then."</div>
+        <div class="quote-author">- Brandon Sanderson, Words of Radiance</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I’m transgender” she repeated. “It means I was born with certain male characteristics. One of which I still have."</div>
+        <div class="quote-author">- Calloway North, Michelle's Extra Digit</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Writing is not a hobby. Collecting stamps or coins is a hobby. Writing is a calling."</div>
+        <div class="quote-author">- Barbara Abercrombie, A Year of Writing Dangerously: 365 Days of Inspiration and Encouragement</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"People don't buy what you do"</div>
+        <div class="quote-author">-  they buy why you do it. And what you do simply proves what you believe</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"If you have to injure someone, then make it so severe that his vengeance need not be feared."</div>
+        <div class="quote-author">- Michael Scott</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Enthusiasm breeds quality and innovation"</div>
+        <div class="quote-author">- Myra Yadav</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"about clichés. Avoid them like the plague."</div>
+        <div class="quote-author">- Khaled Hosseini, The Kite Runner</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"The surest of stubborn silences is not to hold one's tongue but to talk"</div>
+        <div class="quote-author">- Kierkegaard</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Where there is loyalty, weapons are of no use."</div>
+        <div class="quote-author">- Paulo Coelho, Manuscript Found in Accra</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Intuition comes from the heart and soul - not the mind."</div>
+        <div class="quote-author">- Mommy Moo Moo</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"People who were perfectly sane on Tuesday sometimes go nuts on Wednesday."</div>
+        <div class="quote-author">- Dean Koontz, Prodigal Son</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"To receive everything, one must open one’s hands and give."</div>
+        <div class="quote-author">- Taisen Deshimaru</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"He falls asleep believing he's been robbed, not knowing that the summoning of demons is almost always unwitting."</div>
+        <div class="quote-author">- Dexter Palmer, The Dream of Perpetual Motion</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"A hero can go anywhere, challenge anyone, as long as he has the nerve."</div>
+        <div class="quote-author">- Rick Riordan, Percy Jackson & the Olympians:  The Ultimate Guide</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Planning is worrying based on facts"</div>
+        <div class="quote-author">- Bangambiki Habyarimana, The Great Pearl of Wisdom</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Rape culture is a concept of unknown origin and of uncertain definition"</div>
+        <div class="quote-author">-  yet it has made its way into everyday vocabulary and is assumed to be commonly understood. The award-winning documentary film Rape Culture made by Margaret Lazarus in 1975 takes credit for first defining the concept</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Color speaks all languages."</div>
+        <div class="quote-author">- Anthony T. Hincks</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"As we don't live in a perfect world, try to spend 80% of your time doing important but not urgent activities"</div>
+        <div class="quote-author">- Eddie  de Jong, Time Management for a productive life</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"The essence of all experience is Rasa – Bliss."</div>
+        <div class="quote-author">- Prana Gogia</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"She was surprised at how deflating his presence was."</div>
+        <div class="quote-author">- Tom McNeal, To Be Sung Underwater</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Nationalism is not the awakening of nations to self-consciousness: it invents nations where they do not exist."</div>
+        <div class="quote-author">- Ernest Gellner</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Form ever follows function."</div>
+        <div class="quote-author">- Louis H. Sullivan</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"If you are scared to go to the brink  you are lost."</div>
+        <div class="quote-author">- John Foster Dulles</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Hell  madame  is to love no longer."</div>
+        <div class="quote-author">- Georges Bernanos</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Opportunities are usually disguised as hard work  so most people don't recognize them."</div>
+        <div class="quote-author">- Ann Landers</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"Live wastes itself while we are preparing to live."</div>
+        <div class="quote-author">- Ralph Waldo Emerson</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"He paused and manufactured a chuckle."</div>
+        <div class="quote-author">- Carl Hiaasen, Hoot</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"The limits of the possible can only be defined by going beyond them into the impossible."</div>
+        <div class="quote-author">- Arthur C. Clarke</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I believe in unconditional love and equality. Jesus Christ exemplified these qualities."</div>
+        <div class="quote-author">- Jack Canfield</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"You can't make a souffle rise twice."</div>
+        <div class="quote-author">- Alice Roosevelt Longworth</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"You only get one chance at your life so why not jump cars?"</div>
+        <div class="quote-author">- Dax Shepard</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"It's a great experience. If you get a chance to run for president, do it."</div>
+        <div class="quote-author">- Mitt Romney</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"To know what you know and what you do not know, that is true knowledge."</div>
+        <div class="quote-author">- Confucius</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I became a fanatic about healthy food in 1944."</div>
+        <div class="quote-author">- Gloria Swanson</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I'm opinionated. I always stick to my design plan. I don't waver."</div>
+        <div class="quote-author">- Douglas Wilson</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"It's not beauty but fine qualities, my girl, that keep a husband."</div>
+        <div class="quote-author">- Euripides</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"I would define, in brief, the poetry of words as the rhythmical creation of Beauty."</div>
+        <div class="quote-author">- Edgar Allan Poe</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <div class="quote-container">
+        <div class="quote-text">"One of the definitions of sanity is the ability to tell real from unreal. Soon we'll need a new definition."</div>
+        <div class="quote-author">- Alvin Toffler</div>
+        <button class="copy-button" onclick="copyToClipboard(this)">
+            Copy Quote
+            <span class="copy-message">Copied!</span>
+        </button>
+    </div>
+    
+    <script>
+        function copyToClipboard(button) {
+            // Get the parent container (quote-container)
+            const container = button.parentElement;
+
+            // Extract the quote and author text
+            const quoteText = container.querySelector('.quote-text').textContent;
+            const authorText = container.querySelector('.quote-author').textContent;
+
+            // Combine the quote and author
+            const textToCopy = `${quoteText} ${authorText}`;
+
+            // Copy the combined text to the clipboard
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                // Show the "Copied!" message
+                const message = button.querySelector('.copy-message');
+                message.classList.add('show');
+                setTimeout(() => {
+                    message.classList.remove('show');
+                }, 2000);
+            }, function(err) {
+                console.error("Failed to copy: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
